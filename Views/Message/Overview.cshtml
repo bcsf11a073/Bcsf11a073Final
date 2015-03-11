@@ -1,0 +1,46 @@
+﻿@model  List<Project.Models.Info>
+
+@{
+    ViewBag.Title = "Overview";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+    <title>My First Practise on BootsTrap</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+    <<link href="~/Content/bootstrap.min.css" rel="stylesheet"/>
+    <link href="~/Content/Site.css" rel="stylesheet" media="all"/>
+    
+    <link href="~/Content/style2.css" rel="stylesheet" media="all"/>
+    <link type="text/css" rel="stylesheet" href="~/Content/style3.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="~/Content/style4.css" media="only screen and (max-width: 540px)" />
+    <!-- Custom styles for this template -->
+
+    
+    </head>
+
+
+    <body style="background-color:white"> 
+
+         <div class="container" style="padding-left:400px">
+            <div class="col-md-8" style="padding-top:130px">
+                <h1>
+                    Principle Message 
+                </h1>
+                @foreach (var d in Model)
+                { 
+                    <td style="height:200px;width:200px"><img src="~/Files/@d.imagep" style="height:150px;width:150px;"/></td>
+
+                     <p style="font-family:'Brush Script MT' ">@d.Message </p>
+                }
+                <p> </p>
+                
+
+               </div>
+                   </div>
+    </body>
+

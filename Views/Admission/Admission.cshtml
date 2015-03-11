@@ -1,0 +1,396 @@
+﻿@model  Project.Models.StudentInfo
+@{
+    ViewBag.title = "StudentInfo";
+    
+
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+    <title>My First Practise on BootsTrap</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+    <<link href="~/Content/bootstrap.min.css" rel="stylesheet"/>
+    <link href="~/Content/Site.css" rel="stylesheet" media="all"/>
+    
+    <link href="~/Content/style2.css" rel="stylesheet" media="all"/>
+    <link type="text/css" rel="stylesheet" href="~/Content/style3.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="~/Content/style4.css" media="only screen and (max-width: 540px)" />
+    <!-- Custom styles for this template -->
+
+    
+    </head>
+
+    <body >
+
+      <!--  <div style="padding-left:850px"> 
+            
+                 <form action="/Admission/saveimage" method="post" enctype="multipart/form-data" >
+
+                    Upload Image: <input type="file" name="image" id="ïmage" />
+
+                    <input type="submit" value="upload" />
+                </form>-->
+
+
+       <!-- </div>-->
+
+        <form method="post" action="/Admission/Submit"  enctype="multipart/form-data">
+
+        <script src="jquery.js"></script>
+
+          <div style="padding-left:850px">   Upload Image: <input type="file" name="image" id="ïmages"  /></div>
+<div id="body1" class="container" style="right:600px">
+    
+        <div  class="container" style="right:700px">
+             <img src="~/Content/images/pic.jpg" class="img-thumbnail" alt="Cinque Terre" width="650" height="420"/> 
+     
+                 
+      
+    </div>
+
+
+    <div> 
+
+
+
+
+    </div>
+
+        
+
+
+        <div class="container" style="grid-row-align:inherit">
+
+             <div class="row">
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="sizing-addon1">First Name</span>
+                    <input type="text" class="form-control" name="FirstName" placeholder="FirstName" aria-describedby="sizing-addon1" required="FirstName"/>
+            </div>
+                             </div>
+
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span1">Last Name</span>
+                    <input type="text" class="form-control" name="LastName" placeholder="Last Name" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+
+                        </div>
+
+                    </div>
+              </div>
+        
+        <div class="row">
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span2">Father Name</span>
+                    <input type="text" class="form-control" name="FatherName" placeholder="Father Name" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+                             </div>
+
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span3">Occupation</span>
+                    <input type="text" class="form-control" name="Occupation" placeholder="Occupation" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+
+                        </div>
+
+                    </div>
+              </div>
+
+
+        <div class="row">
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span4">Nationality</span>
+                    <input type="text" class="form-control" name="Nationality"  aria-describedby="sizing-addon1" required="required"/>
+            </div>
+                             </div>
+
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span5">Religion</span>
+                    <input type="text" class="form-control"  name="Religion" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+
+                        </div>
+
+                    </div>
+              </div>
+
+        <div class="row">
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span6">Nic/B.Form</span>
+                    <input type="text" class="form-control"  name="Nic" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+                             </div>
+
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span7">Domicile</span>
+                    <input type="text" class="form-control" name="Domicile" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+
+                        </div>
+
+                    </div>
+              </div>
+
+
+        <div class="row">
+                    <div class="col-xs-6 col-md-12" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span8">Address</span>
+                    <input type="text" class="form-control"  name="Address" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+                             </div>
+
+                    </div>
+
+            </div>
+
+
+
+         <div class="row">
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span9">Province</span>
+                    <input type="text" class="form-control"  name="province" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+                             </div>
+
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span10">City</span>
+                    <input type="text" class="form-control"  name="City" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+
+                        </div>
+
+                    </div>
+              </div>
+
+
+       
+
+
+        <div class="row">
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span11">Date OF Birth</span>
+                    <input type="text" class="form-control"  name="Dob"  aria-describedby="sizing-addon1" required="required"/>
+            </div>
+                             </div>
+
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                                 <label> Gendre</label>
+                                     
+                                                              <div class="radio" >
+                              <label><input type="radio" name="Gender"/>Male</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="Gender"/>Female</label>
+                            </div>
+
+                    
+            </div>
+
+                        </div>
+
+                    </div>
+              </div>
+
+
+         <div class="row">
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span12">Religion</span>
+                    <input type="text" class="form-control"   name="Religion" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+                             </div>
+
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg" id="h1">
+
+                                 <label> Hafiz-e-Quran</label>
+                                     
+                              <div class="radio" id="yes">
+
+                              <label><input type="radio" name="Hafiz"/>Yes</label>
+                                </div>
+                                <div class="radio" id="No">
+                              <label><input type="radio" name="Hafiz"/>No</label>
+                            </div>
+
+                    
+            </div>
+
+                        </div>
+
+                    </div>
+              </div>
+
+        <div class="row">
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span13">Ph.No</span>
+                    <input type="text" class="form-control"  name="Phone" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+                             </div>
+
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-4" >
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+
+                    <span class="input-group-addon" id="Span14">Mobile No</span>
+                    <input type="text" class="form-control"  name="Mobile" aria-describedby="sizing-addon1" required="required"/>
+            </div>
+
+                        </div>
+
+                    </div>
+              </div>
+
+
+         <div class="container">
+  <h2>Academic Information</h2>
+  
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Examination Passed</th>
+        <th>Name of Board</th>
+        <th>Passing Year</th>
+          <th>Marks Obtained</th>
+          <th>Maximum Marks</th>
+          <th>percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Matric /O*level/Other</td>
+          <td><input type="text" class="form-control" name="Board" aria-describedby="sizing-addon1" required="required"/></td>
+          <td><input type="text" class="form-control" name="Passingyear" aria-describedby="sizing-addon1" required="required"/></td>
+          <td><input type="text" class="form-control" name="Marks" aria-describedby="sizing-addon1" required="required"/></td>
+          <td><input type="text" class="form-control" name="MaxMarks" aria-describedby="sizing-addon1" required="required"/></td>
+          <td><input type="text" class="form-control" name="Percentage" aria-describedby="sizing-addon1" required="required"/></td>
+
+        
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+        </div>
+
+
+
+        <div class="container">
+<div class="row">
+    <div class="col-xs-8 "></div>
+    <div class="col-xs-2">
+    
+    
+                    
+                        <div class="well">    
+                             <div class="input-group input-group-lg">
+                                 
+         <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+   
+
+                    
+            </div>
+                             </div>
+</div>
+    </div>
+      </div>
+      
+
+
+        
+               
+
+
+         
+        
+                  
+
+                            
+
+
+
+
+
+
+
+
+
+
+   
+    </div>
+            </form>
+
+        </body>
+    </html>
